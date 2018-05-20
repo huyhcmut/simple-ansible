@@ -1,0 +1,6 @@
+- name: "Installing basic softwares"
+  apt: pkg={{ item }} state=installed
+  with_items:
+  - dnsutils
+  - git
+  - vim
