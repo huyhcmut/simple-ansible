@@ -11,9 +11,9 @@ class QuoteResource:
 
 	try:
 		db = MySQLdb.connect(host="dbserver",
-				     user="ansibletutorial",
+				     user="huy",
 				     passwd=os.environ['databasepassword'],
-				     db="ansibletutorial")
+				     db="testdb")
 
 	except:
             resp.body = '<html><head><title>Error</title><body><h1>Database not available!</h1></body></html>'
